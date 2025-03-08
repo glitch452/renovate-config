@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "BlueGlassBlock.better-json5",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "matteopieroni.refresh-npm-packages",
+    "oderwat.indent-rainbow",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.0",
+  "description": "Shared configurations for the Renovate dependency management bot",
+  "keywords": [
+    "bot",
+    "dependencies",
+    "dependency",
+    "renovate"
+  ],
+  "homepage": "https://github.com/glitch452/renovate-config#readme",
+  "bugs": {
+    "url": "https://github.com/glitch452/renovate-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/glitch452/renovate-config.git"
+  },
+  "license": "MIT",
+  "author": "David Dearden",
+  "type": "module",
+  "scripts": {
+    "format:ci": "prettier --check '**.{mjs,cjs,js,json,md,ts,yaml,yml}'",
+    "format": "prettier --write .",
+    "pre-commit": "lint-staged --config lint-staged.config.js",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.4.3",
+    "prettier": "3.5.3",
+    "typescript": "5.8.2"
+  }
+}

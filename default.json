@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": [
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    ":ignoreModulesAndTests",
+    "group:monorepos",
+    "group:recommended",
+    "group:allNonMajor",
+    "replacements:all",
+    "workarounds:all"
+  ],
+
+  "timezone": "Canada/Pacific",
+  "prHourlyLimit": 10,
+  "separateMajorMinor": false,
+  "branchNameStrict": true,
+  "configMigration": true
+}

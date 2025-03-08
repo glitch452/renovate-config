@@ -1,0 +1,27 @@
+{
+  // Docs: https://docs.renovatebot.com/configuration-options
+
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:recommended',
+    'schedule:monthly',
+    'npm:unpublishSafe',
+    'group:all',
+    ':semanticCommitTypeAll(chore)',
+  ],
+
+  timezone: 'Canada/Pacific',
+  dependencyDashboard: false,
+  branchNameStrict: true,
+  separateMajorMinor: false,
+  configMigration: true,
+  prHourlyLimit: 0,
+
+  packageRules: [
+    {
+      description: 'Pin all except peer dependencies for npm',
+      extends: [':pinAllExceptPeerDependencies'],
+      matchManagers: ['npm'],
+    },
+  ],
+}

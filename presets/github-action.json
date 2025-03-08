@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "customManagers": [
+    {
+      "description": "Update node version in action.yml",
+      "customType": "regex",
+      "fileMatch": ["^action\\.yml$"],
+      "matchStrings": ["using: (?<depName>[a-z]+)(?<currentValue>[0-9]+)"],
+      "autoReplaceStringTemplate": "using: {{{depName}}}{{{newValue}}}",
+      "datasourceTemplate": "{{{depName}}}",
+      "versioningTemplate": "{{{depName}}}"
+    }
+  ],
+
+  "packageRules": [
+    {
+      "description": "Limit node versions to those supported for use by a GitHub Action (divisible by 4)",
+      "matchPackageNames": ["node", "@types/node"],
+      "allowedVersions": "/^v?([0-9]*[02468][048]|[0-9]*[13579][26]|[048])(\\.[0-9]+){2}$/"
+    }
+  ]
+}
