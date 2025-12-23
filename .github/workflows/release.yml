@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Publish to the release branch
         id: publish
-        uses: glitch452/branch-release@v0
+        uses: glitch452/branch-release@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
