@@ -1,7 +1,7 @@
 export default {
   '*.{md,mdx,mjs,cjs,js,jsx,cjsx,mjsx,mts,cts,ts,tsx,ctsx,mtsx}': ['prettier --ignore-unknown --write'],
   '*.{css,html,json,scss,yaml,yml}': 'prettier --ignore-unknown --write',
-  'renovate.json5': [
+  '{renovate.json5,default.json,presets/*.json}': [
     'prettier --ignore-unknown --write',
     'npx --yes --package renovate -- renovate-config-validator --strict',
   ],
