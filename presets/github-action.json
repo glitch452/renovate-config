@@ -5,7 +5,7 @@
     {
       "description": "Update node version in action.yml",
       "customType": "regex",
-      "fileMatch": ["^action\\.yml$"],
+      "managerFilePatterns": ["^action\\.yml$"],
       "matchStrings": ["using: (?<depName>[a-z]+)(?<currentValue>[0-9]+)"],
       "autoReplaceStringTemplate": "using: {{{depName}}}{{{newValue}}}",
       "datasourceTemplate": "{{{depName}}}",
