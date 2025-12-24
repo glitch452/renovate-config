@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-  "extends": ["npm:unpublishSafe"],
+  "extends": ["security:minimumReleaseAgeNpm"],
 
   "packageRules": [
     {
