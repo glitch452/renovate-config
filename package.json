@@ -20,7 +20,7 @@
   "author": "David Dearden",
   "type": "module",
   "scripts": {
-    "format:ci": "prettier --check '**.{mjs,cjs,js,json,md,ts,yaml,yml}'",
+    "format:ci": "prettier --check '**.{mjs,cjs,js,json,json5,md,ts,yaml,yml}'",
     "format": "prettier --write .",
     "pre-commit": "lint-staged --config lint-staged.config.js",
     "prepare": "husky || true"
