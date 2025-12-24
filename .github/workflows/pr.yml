@@ -48,3 +48,8 @@ jobs:
 
       - name: Check Formatting
         run: npm run format:ci
+
+      - name: Check Renovate Config
+        run: >-
+          npx --yes --package renovate -- renovate-config-validator --strict
+          {renovate.json5,default.json,presets/*.json}
