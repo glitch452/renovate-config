@@ -17,7 +17,7 @@
   configMigration: true,
   prHourlyLimit: 0,
 
-  "baseBranchPatterns": ["develop"],
+  baseBranchPatterns: ['develop'],
 
   packageRules: [
     {
