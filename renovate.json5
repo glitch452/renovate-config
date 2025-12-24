@@ -17,6 +17,8 @@
   configMigration: true,
   prHourlyLimit: 0,
 
+  "baseBranchPatterns": ["develop"],
+
   packageRules: [
     {
       description: 'Pin all except peer dependencies for npm',
