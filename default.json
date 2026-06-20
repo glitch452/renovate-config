@@ -16,5 +16,13 @@
   "prHourlyLimit": 10,
   "separateMajorMinor": false,
   "branchNameStrict": true,
-  "configMigration": true
+  "configMigration": true,
+
+  "packageRules": [
+    {
+      "description": "Keep updates to GitHub Actions in a single PR to minimize PR noise",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions"
+    }
+  ]
 }
