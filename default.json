@@ -14,7 +14,7 @@
 
   "timezone": "Canada/Pacific",
   "prHourlyLimit": 10,
-  "separateMajorMinor": false,
+  "separateMajorMinor": true,
   "branchNameStrict": true,
   "configMigration": true,
 
