@@ -19,6 +19,10 @@
 
   baseBranchPatterns: ['develop'],
 
+  automerge: true,
+  automergeType: 'pr',
+  platformAutomerge: true,
+
   // Run on Friday Mornings
   schedule: ['* 0-6 * * 5'],
 
