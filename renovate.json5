@@ -24,7 +24,7 @@
   platformAutomerge: true,
 
   // Run on Friday Mornings
-  schedule: ['* 0-6 * * 5'],
+  schedule: ['* 0-12 * * 5'],
 
   packageRules: [
     {
