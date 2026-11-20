@@ -11,7 +11,7 @@
   ],
 
   timezone: 'Canada/Pacific',
-  dependencyDashboard: false,
+  dependencyDashboard: { enabled: false },
   branchNameStrict: true,
   separateMajorMinor: false,
   configMigration: true,

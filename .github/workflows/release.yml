@@ -33,9 +33,7 @@ jobs:
           node-version-file: ".nvmrc"
 
       - name: Check Renovate Config
-        run: >-
-          npx --yes --package renovate -- renovate-config-validator --strict
-          {renovate.json5,default.json,presets/*.json}
+        run: npm run validate
 
       - name: Publish to the release branch
         id: publish
