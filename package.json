@@ -23,7 +23,8 @@
     "format:ci": "prettier --check '**.{mjs,cjs,js,json,json5,md,ts,yaml,yml}'",
     "format": "prettier --write .",
     "pre-commit": "lint-staged --config lint-staged.config.js",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "validate": "npx --yes --package renovate -- renovate-config-validator --strict renovate.json5 default.json presets/*.json"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
