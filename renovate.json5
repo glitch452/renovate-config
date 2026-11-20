@@ -1,36 +1,30 @@
 {
-  // Docs: https://docs.renovatebot.com/configuration-options
-
-  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
-    'config:recommended',
-    'security:minimumReleaseAgeNpm',
-    'group:all',
-    ':semanticCommits',
-    ':semanticCommitTypeAll(chore)',
+    "config:recommended",
+    "security:minimumReleaseAgeNpm",
+    "group:all",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
   ],
-
-  timezone: 'Canada/Pacific',
-  dependencyDashboard: false,
+  timezone: "Canada/Pacific",
+  dependencyDashboard: {
+    enabled: false,
+  },
   branchNameStrict: true,
   separateMajorMinor: false,
   configMigration: true,
   prHourlyLimit: 0,
-
-  baseBranchPatterns: ['develop'],
-
+  baseBranchPatterns: ["develop"],
   automerge: true,
-  automergeType: 'pr',
+  automergeType: "pr",
   platformAutomerge: true,
-
-  // Run on Friday Mornings
-  schedule: ['* 0-12 * * 5'],
-
+  schedule: ["* 0-12 * * 5"],
   packageRules: [
     {
-      description: 'Pin all except peer dependencies for npm',
-      extends: [':pinAllExceptPeerDependencies'],
-      matchManagers: ['npm'],
+      description: "Pin all except peer dependencies for npm",
+      extends: [":pinAllExceptPeerDependencies"],
+      matchManagers: ["npm"],
     },
   ],
 }
